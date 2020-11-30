@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>Cindy Kang - Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="portfolio.css">
+	<script type="text/javascript" src="portfolio.js"></script>
+</head>
+
+<body>
+	<div class="header_wrapper" aria-labelledby="header section">
+		<div class="header_sections">
+			<a href="homepage.html">
+            	<button class="back_button">
+               		Homepage
+            	</button> 
+         	</a>
+		</div>
+		<div class="header_sections">
+			<nav class="nav_bar" aria-labelledby="navigation bars">
+				<ul>
+					<li>
+						<a href="resume.html" class="nav_link">Resume</a>
+					</li>
+					<li>
+						<a href="bio.html" class="nav_link">Bio</a>
+					</li>
+					<li>
+						<a href="contact.html" class="nav_link">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+
+	<div class="project_wrapper" aria-labelledby="main project section">
+		<div class="project_heading">
+			AI Limits Project
+		</div>
+		<div class="project_sections" aria-labelledby="Overview">
+			<h2 class="section_title">Overview</h2>
+			<p class="section_text">
+				In this research project, we examines the performance of Machine Learning Algorithms 
+				in classification and dimensionality reduction under distractions. In particular, we explores how the accuracy changes under the impacts of correlated and uncorrelated noises. 
+			</p>
+		</div>
+		<div class="project_sections" aria-labelledby="Methods">
+			<h2 class="section_title">Methods</h2>
+			<p class="section_text">
+				We write code using python and collaborate via GitHub and Google Colab. We focus on examining three algorithms for dimension reduction: the <strong>t-Distributed Stochastic Neighbor Embedding (t-SNE)</strong>, the <strong>Principal Components Analysis (PCA)</strong>, and the <strong>Uniform Manifold Approximation and Projection for Dimension Reduction (UMAP)</strong>.
+			</p>
+			<p class="section_text">
+				We evaluated each algorithm's performance in reducing dimensions by comparing the visualizations created. Also, we applied the Random Forest Classifier to data after dimension reduction to see the change in accuracies as the number of noises increases. 
+			</p>
+		</div>
+		<div class="project_sections" aria-labelledby="Current Findings">
+			<h2 class="section_title">Current Findings</h2>
+			<p class="section_text">
+				Through the initial evaluation of the visualizations created through dimensional reduction, 
+				we found that PCA performs poorly as the number of noises increases. Thus, we decided to focus on 
+				t-SNE and UMAP for the later tests.
+			</p>
+			<p class="section_text">
+				The figures below shows the Random Forest accuracies for data after the dimensional reduction by t-SNE. The line plots show the change in accuracy as the number of noisy features increases. We use separated test and training groups to confirm the result. 
+			</p>
+			<div class="img_wrapper">
+				<img src="images/project_img1.png" class="project_img" alt="overall accuracy plot">
+				<figcaption class="project_img_cap">Overall Accuracy Plot (Number of Noises 0 - 1000)</figcaption>
+			</div>
+			<div class="img_wrapper">
+				<img src="images/project_img2.png" class="project_img" alt="accuracy plot for 700 to 1000 number of noises">
+				<figcaption class="project_img_cap">Accuracy Plot (Number of Noises 700 - 1000)</figcaption>
+			</div>
+			<div class="img_wrapper">
+				<img src="images/project_img3.png" class="project_img" alt="accuracy plot for 60 to 100 number of noises">
+				<figcaption class="project_img_cap">Accuracy Plot (Number of Noises 60 - 100)</figcaption>
+			</div>
+			<div class="img_wrapper">
+				<img src="images/project_img4.png" class="project_img" alt="accuracy plot for 100 to 1000 number of noises">
+				<figcaption class="project_img_cap">Accuracy Plot (Number of Noises 100 - 1000)</figcaption>
+			</div>
+			<p class="section_text">
+				As shown by the plots, we observed anomaly for t-SNE at 900 number of noisy features. Also plateauing happens from 70 to 80 features. Moreover, we observed a few large fluctuations in accuracies in the range 370 to 380 and 680 to 700. 
+			</p>
+		</div>
+		<div class="project_sections" aria-labelledby="Next Steps">
+			<h2 class="section_title">Next Steps</h2>
+			<p class="section_text">
+				The general behavior of accuracies decreasing with increasing number of of noises matches our expectation. Also, we guessed two possibilities for the deviation from the general behavior at specific ranges: <br>
+				1. the intrinsic of tsne for this kind of data structure <br>
+				2. the characteristics of the source data we use
+			</p>
+			<p class="section_text">
+				Next, we are going to repeat the tests on UMAP. We are also planning to regenerate our data source. 
+			</p>
+		</div>
+		<div class="project_sections" aria-labelledby="Potential Implementations">
+			<h2 class="section_title">Potential Implementations</h2>
+			<p class="section_text">
+				The result of this research project can help data scientists and analysts to select the optimal algorithm to complete their tasks in a clean and efficient way. Also, it allows us to further understand the behavior of machine learning algorithms. 
+			</p>
+		</div>
+	</div>
+</body>
+</html>
