@@ -433,6 +433,7 @@ nav.nav_bar li {
 	display: block;
 	text-align: left;
 	width: 100%;
+	margin-top: 0px;
 }
 
 .bio_image {
