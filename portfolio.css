@@ -425,6 +425,7 @@ nav.nav_bar li {
 	color: #808080;
 	font-size: 18px;
 	width: 90%;
+	margin-top: -10px;
 }
 
 .bio_info_title {
