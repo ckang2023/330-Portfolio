@@ -13,7 +13,7 @@ All three project can expand and show a short description when hovering over.
 **Extra Credit Explanations** <br>
 For one of the extra credit features, I did the integration of external contents. Since this item requires verbal explanation, I provided them below. 
 
-External Content Integration
+<i>External Content Integration</i> <br>
 I integrated two types of external contents: YouTube video and Google Calendar. 
 
 I integrated YouTube video on my bio webpage, because my singing talent is an important part about me. Thus, I think the best way to directly showcase my talent to the users is to include a video of me singing in the “talent gallery” section on my bio page. A representative task that can be supported by this integration is when a recruiter wants to know my talents and interests besides my academic-related performances. They can go to the “bio” page from the top menu bar on the portfolio homepage. Scrolling down to the “talent gallery” section, they can access my recorded singing video on YouTube and get a clear idea about my singing talent. 
