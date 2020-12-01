@@ -8,7 +8,7 @@ The notes and explanations below are also included in my Canvas comment section 
 
 **Additional Notes** <br>
 Among the three showcase projects presented on the portfolio homepage, only the AI project is clickable and will direct the users to a separate project description page. The project description page is created as project.html.
-All three project can expand and show a short description when hovering over. 
+All three project can expand and show a short description when hovering over using the mouse or focusing using the "tab" key on the keyboard.
 
 **Extra Credit Explanations** <br>
 For one of the extra credit features, I did the integration of external contents. Since this item requires verbal explanation, I provided them below. 
